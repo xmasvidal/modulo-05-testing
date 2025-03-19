@@ -32,6 +32,7 @@ describe('useConfirmationDialog hook specs', () => {
         const mockItem: Lookup = { id: '1', name: 'Item 1' };
     
         act(() => {
+          result.current.onOpenDialog(mockItem);
           result.current.onAccept();
         });
     
