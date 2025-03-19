@@ -36,10 +36,10 @@ export const ConfirmationDialogComponent: React.FunctionComponent<Props> = (
       <DialogTitle>{title}</DialogTitle>
       <DialogContent>{children}</DialogContent>
       <DialogActions>
-        <Button onClick={onClose} color="secondary" variant="contained">
+        <Button onClick={onClose} color="secondary" variant="contained" aria-label="close-button">
           {labels.closeButton}
         </Button>
-        <Button onClick={handleAccept} color="primary" variant="contained">
+        <Button onClick={handleAccept} color="primary" variant="contained" aria-label="accept-button">
           {labels.acceptButton}
         </Button>
       </DialogActions>
