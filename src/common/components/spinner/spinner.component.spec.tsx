@@ -6,7 +6,7 @@ import * as promiseTracker from "react-promise-tracker";
 vi.mock('react-promise-tracker', async (importOriginal) => {
     const actual = await importOriginal();
     return {
-      ...actual,
+      ...actual as Record<string, unknown>,
       __esModule: true,
       promiseInProgress: true
     }
