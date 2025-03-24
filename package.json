@@ -15,6 +15,7 @@
     "start:e2e": "cypress open",
     "test:e2e:ci": "npm start -- -r start:e2e:ci",
     "start:e2e:ci": "cypress run",
+    "test:e2e:playwright": "playwright test --ui",
     "clean": "rimraf dist"
   },
   "imports": {
@@ -48,10 +49,12 @@
     "react-spinners": "^0.15.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.51.1",
     "@testing-library/cypress": "^10.0.3",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.1.0",
+    "@types/node": "^22.13.12",
     "@types/react": "^19.0.1",
     "@types/react-dom": "^19.0.2",
     "@vitejs/plugin-react": "^4.3.4",
